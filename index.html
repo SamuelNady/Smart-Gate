@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts, cairo font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- bootstrap 5.3.2 -->
+    <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
+    <!-- font awesome 6.4.2-->
+   <link rel="stylesheet" href="assets/vendors/css/all.min.css">
+   <!-- normalize file 8.0.1 -->
+   <link rel="stylesheet" href="assets/vendors/css/normalize.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- website img -->
+    <link rel="icon" href="assets/images/navImg.png">
+    <title>Smart Gate</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg position-fixed w-100">
+        <div class="container flex-row-reverse">
+          <a class="navbar-brand mx-3" href="index.html">
+            <img src="assets/images/navImg.png" alt="navbar image" class="img-fluid">
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-5"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex flex-lg-row flex-column-reverse col">
+              <div class=" me-lg-auto d-lg-block d-flex flex-column align-items-center">
+                <button class="btn bg-transparent fw-bold border-primary text-primary mb-2 mb-lg-0">عضو جديد</button>
+            <button class="btn bg-transparent fw-bold border-0 ms-lg-2 mb-lg-0 mb-2">تسجيل الدخول</button>
+              </div>
+              <li class="nav-item mb-2 mb-lg-0">
+                <a class="nav-link text-black-50 fw-bold text-center" href="#contact-us">اتصل بنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="who-are-we.html">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="#our-events">الندوات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="#our-fields">قطاعتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="#services">خدماتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="#news">أخبار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold ms-lg-3 active text-center" href="#landing">الرئيسية</a>
+              </li>
+            </ul>
+          </div>
+          <div class="log-in mt-4 d-none">
+            <div class="card event-register text-end border-0 rounded-4 main-shadow col-11 col-md-7">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-6 d-none d-md-block">
+                    <img src="assets/images/sing in pic.png" alt="card image" class="img-fluid">
+                  </div>
+                  <div class="col-12 col-md-6 main">
+                    <img src="assets/images/Group 10430.svg" alt="back arrow" class="ms-auto mb-3 arrow-back">
+                    <h5 class="card-title fw-bold">تسجيل الدخول</h5>
+                    <p class="card-text text-black-50">
+                      من فضلك قم بإدخال البيانات المطلوبة منك لإستكمال تسجيل الدخول ومعرفة الدرجات والتقديرات الخاصة بك في الجامعة
+                    </p>
+                    <form class="text-end mb-3" action="">
+                      <input class="form-control bg-light mb-3" type="number" placeholder= "الرقم القومي" required>
+                      <input class="form-control bg-light mb-3" type="number" placeholder= "الرقم الجامعي" required>
+                      <input type="submit" class="btn border-0 fw-bold d-flex ms-auto main-btn" value="تسجيل الآن">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="registeration mt-4 d-none">
+            <div class="card event-register text-end border-0 rounded-4 main-shadow col-11 col-md-7">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-6 d-none d-md-block">
+                    <img src="assets/images/sing in pic.png" alt="card image" class="img-fluid">
+                  </div>
+                  <div class="col-12 col-md-6 main">
+                    <img src="assets/images/Group 10430.svg" alt="back arrow" class="ms-auto mb-3 arrow-back">
+                    <h5 class="card-title fw-bold">الكلية والتخصص</h5>
+                    <form class="text-end mb-3" action="">
+                      <select class="form-select bg-light mb-3">
+                        <option selected>اختر الكلية</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <select class="form-select bg-light mb-3">
+                        <option selected>اختر القسم - التخصص</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <input class="form-control bg-light mb-3" type="number" placeholder= "رقم الجلوس" required>
+                      <input type="submit" class="btn border-0 fw-bold d-flex ms-auto main-btn" value="المتابعة">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="landing d-flex align-items-center pb-4" id="landing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-10 ms-auto mb-5 mb-lg-0">
+            <img src="assets/images/858.png" alt="landing image" class="img-fluid">
+          </div>
+          <div class="col-lg-7 text-end">
+            <img src="assets/images/Group 40.svg" alt="">
+            <h1 class="text-uppercase text-center fw-bold"> <span>smart</span> gate</h1>
+            <p class="fs-6">
+              الأفكار المبدعه والمبتكرة هي طريقنا لبناء علاقتنا مع العميل كفريق عمل واحد بداية من العمل سوياً ثم التشغيل والإدارة نعمل معا ننجح معا - وذلك عن طريق تقديم المنتجات والخدمات ذات الجوده العالية في مجال تكنولوجيا المعلومات لتطوير البرامج والبنية التحتية اللازمة من أجهزة وشبكات وبرمجيات لتطوير الأداء لدي العملاء
+
+            </p>
+            <button class="btn border-0 fw-bold ms-auto main-btn">
+              <a href="#services" class="text-decoration-none d-flex">
+                <div class="me-2">
+                  <img src="assets/images/keyboard_backspace_black_24dp.svg" alt="back-space" class="img-fluid">
+                </div>
+                تعرف علينا
+              </a>
+            </button>
+            <img src="assets/images/Group 39.svg" alt="" class="me-auto mt-4 mt-lg-0 d-block">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="news bg-light py-4" id="news">
+      <div class="container">
+        <div class="sec-header mb-3 fw-bold text-end pe-2">اخر الاخبار</div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+            <div class="card mx-auto border-0">
+              <img src="assets/images/NoPath - Copy (57).png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="text-end text-black-50">
+                  الأحد ، الموافق 29 / 01 / 2022
+                  <img src="assets/images/event_black_24dp.svg" alt="calender">
+                </p>
+                <p class="card-text text-end fw-bold">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+            <div class="card mx-auto border-0">
+              <img src="assets/images/NoPath - Copy (58).png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="text-end text-black-50">
+                  الأحد ، الموافق 29 / 01 / 2022
+                  <img src="assets/images/event_black_24dp.svg" alt="calender">
+                </p>
+                <p class="card-text text-end fw-bold">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mx-auto border-0">
+              <img src="assets/images/NoPath - Copy (57).png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="text-end text-black-50">
+                  الأحد ، الموافق 29 / 01 / 2022
+                  <img src="assets/images/event_black_24dp.svg" alt="calender">
+                </p>
+                <p class="card-text text-end fw-bold">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+              </div>
+            </div>
+          </div>
+          <div class=" slider d-flex justify-content-center mt-4">
+            <img src="assets/images/Group 10453.svg" alt="left" class="me-5">
+            <img src="assets/images/right-arrow.svg" alt="right">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="services py-4" id="services">
+        <div class="container">
+          <div class="sec-header mb-3 fw-bold text-end pe-2">خدماتنا</div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card mb-xlg-0 mb-3 mx-auto rounded-4 p-4 border-0 main-shadow">
+                <img src="assets/images/svgexport-6 (4).svg" class="card-img-top ms-auto p-3 rounded" alt="card img">
+                <div class="card-body text-end">
+                  <h5 class="card-title fw-bold">تطبيقات الموبايل</h5>
+                  <p class="card-text text-black-50">
+                    نظراً لأهمية تطبيقات الموبايل وكثرة عدد مستخدميها بشكل لا غني عنه الآن نهتم بالعمل عليها دائماً بكافة التقنيات والأنظمة بمختلف أنواعها
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card mb-xlg-0 mb-3 mx-auto rounded-4 p-4 border-0 main-shadow">
+                <img src="assets/images/svgexport-6 (5).svg" class="card-img-top ms-auto p-3 rounded" alt="card img">
+                <div class="card-body text-end">
+                  <h5 class="card-title fw-bold">تطبيقات الموبايل</h5>
+                  <p class="card-text text-black-50">
+                    نظراً لأهمية تطبيقات الموبايل وكثرة عدد مستخدميها بشكل لا غني عنه الآن نهتم بالعمل عليها دائماً بكافة التقنيات والأنظمة بمختلف أنواعها
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card rounded-4 p-4 mb-3 mx-auto border-0 main-shadow">
+                <img src="assets/images/svgexport-10.svg" class="card-img-top ms-auto p-3 rounded" alt="card img">
+                <div class="card-body text-end">
+                  <h5 class="card-title fw-bold">تطبيقات الموبايل</h5>
+                  <p class="card-text text-black-50">
+                    نظراً لأهمية تطبيقات الموبايل وكثرة عدد مستخدميها بشكل لا غني عنه الآن نهتم بالعمل عليها دائماً بكافة التقنيات والأنظمة بمختلف أنواعها
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card rounded-4 p-4 mx-auto border-0 main-shadow">
+                <img src="assets/images/svgexport-10 (1).svg" class="card-img-top ms-auto p-3 rounded" alt="card img">
+                <div class="card-body text-end">
+                  <h5 class="card-title fw-bold">تطبيقات الموبايل</h5>
+                  <p class="card-text text-black-50">
+                    نظراً لأهمية تطبيقات الموبايل وكثرة عدد مستخدميها بشكل لا غني عنه الآن نهتم بالعمل عليها دائماً بكافة التقنيات والأنظمة بمختلف أنواعها
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-4 grades">
+        <div class="container">
+          <img src="assets/images/Group 9130.png" alt="your grade" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="our-fields py-4" id="our-fields">
+        <div class="container">
+          <div class="sec-header mb-3 fw-bold text-end pe-2">قطاعتنا</div>
+          <div class="row">
+            <div class="col col-md-6 col-lg-4 mb-3 mb-lg-0">
+              <div class="card rounded-4">
+                <img src="assets/images/Group 11340.png" class="rounded-0" alt="item one">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">قطاع الزراعة</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-4 mb-3 mb-lg-0">
+              <div class="card rounded-4">
+                <img src="assets/images/Group 11339.png" class="rounded-0" alt="item one">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">قطاع السيارات</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-4">
+              <div class="card rounded-4">
+                <img src="assets/images/Group 11338.png" class="rounded-0" alt="item one">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">قطاع التعليم</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-events py-4" id="our-events">
+        <div class="container">
+          <div class="sec-header mb-3 fw-bold text-end pe-2">الندوات</div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+              <div class="card mx-auto border-0 rounded-4 main-shadow">
+                <div class="overlay-show">
+                  <span>
+                    <img src="assets/images/eye.svg" alt="eye img" >
+                  </span>
+                  <span class="d-none">
+                    <i class="fa-solid fa-x"></i>
+                  </span>
+                <img src="assets/images/work-1.jpg" class="rounded-1 img-fluid" alt="img-1">
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-end fw-bold">
+                    ندوة خاصة عن مراحل إنشاء المواقع
+                  </p>
+                  <p class="text-end text-black-50">
+                    الأحد ، الموافق 29 / 01 / 2022
+                    <img src="assets/images/event_black_24dp.svg" alt="calender">
+                  </p>
+                  <button class="btn border-0 fw-bold d-flex ms-auto main-btn reg-btn">
+                    <div class="me-2">
+                      <img src="assets/images/keyboard_backspace_black_24dp.svg" alt="back-space" class="img-fluid">
+                    </div>
+                    التسجيل الآن
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+              <div class="card mx-auto border-0 rounded-4 main-shadow">
+                <div class="overlay-show">
+                  <span>
+                    <img src="assets/images/eye.svg" alt="eye img" >
+                  </span>
+                  <span class="d-none">
+                    <i class="fa-solid fa-x"></i>
+                  </span>
+                  <img src="assets/images/opener-home-workspace.jpg" class="rounded-1 img-fluid" alt="img-1">
+                  </div>
+                <div class="card-body">
+                  <p class="card-text text-end fw-bold">
+                    ندوة خاصة عن مراحل إنشاء المواقع
+                  </p>
+                  <p class="text-end text-black-50">
+                    الأحد ، الموافق 29 / 01 / 2022
+                    <img src="assets/images/event_black_24dp.svg" alt="calender">
+                  </p>
+                  <button class="btn border-0 fw-bold d-flex ms-auto main-btn reg-btn">
+                    <div class="me-2">
+                      <img src="assets/images/keyboard_backspace_black_24dp.svg" alt="back-space" class="img-fluid">
+                    </div>
+                    التسجيل الآن
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+              <div class="card mx-auto border-0 rounded-4 main-shadow">
+                <div class="overlay-show">
+                  <span>
+                    <img src="assets/images/eye.svg" alt="eye img" >
+                  </span>
+                  <span class="d-none">
+                    <i class="fa-solid fa-x"></i>
+                  </span>
+                  <img src="assets/images/getty_670123768_376009.jpg" class="rounded-1 img-fluid" alt="img-1">
+                  </div>
+                <div class="card-body">
+                  <p class="card-text text-end fw-bold">
+                    ندوة خاصة عن مراحل إنشاء المواقع
+                  </p>
+                  <p class="text-end text-black-50">
+                    الأحد ، الموافق 29 / 01 / 2022
+                    <img src="assets/images/event_black_24dp.svg" alt="calender">
+                  </p>
+                  <button class="btn border-0 fw-bold d-flex ms-auto main-btn reg-btn">
+                    <div class="me-2">
+                      <img src="assets/images/keyboard_backspace_black_24dp.svg" alt="back-space" class="img-fluid">
+                    </div>
+                    التسجيل الآن
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="register mt-4 d-none">
+              <div class="card event-register text-end border-0 rounded-4 main-shadow col-11 col-md-7">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-6 d-none d-md-block">
+                      <img src="assets/images/Group 11345.png" alt="card image" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 main">
+                      <img src="assets/images/Group 10430.svg" alt="back arrow" class="ms-auto mb-3 arrow-back">
+                      <h5 class="card-title fw-bold">التسجيل في الندوة</h5>
+                      <p class="card-text text-black-50">
+                        من فضلك قم بإدخال البيانات المطلوبة منك وسوف يتم إرسال تفاصيل الندوة لك وموعدها علي بريدك الإلكتروني ورقم تذكرة الحضور الخاصة بك
+                      </p>
+                      <form class="text-end mb-3" action="">
+                        <input class="form-control bg-light mb-3" type="text" placeholder= "الأسم بالكامل" required>
+                        <input class="form-control bg-light mb-3" type="number" placeholder= "رقم الهاتف" required>
+                        <input class="form-control bg-light mb-3" type="email" placeholder= "بريد إلكترونب" required>
+                        <input type="submit" class="btn border-0 fw-bold d-flex ms-auto main-btn sub-data" value="تسجيل الأن">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="event-success d-none">
+              <div class="card border-0 rounded-4 main-shadow col-11 col-sm-9 col-md-5 p-4 pt-5">
+                <i class="fa-solid fa-circle-check"></i>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">تم التسجيل بنجاح</h5>
+                  <p class="card-text text-black-50 text-center mx-auto">
+                    من فضلك قم بمراجعة البريد الوارد لديك علي بريدك الإلكتروني الخاص بك لمعرفة التفاصيل الخاصة بالندوة وتذكرة الحضور والميعاد
+                  </p>
+                  <button class="btn border-0 fw-bold d-flex mx-auto main-btn">
+                    حسنا ً، فهمت
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="our-clients py-4">
+        <div class="container">
+          <div class="sec-header mb-3 fw-bold text-end pe-2">عملائنا المميزون</div>
+          <div class="row">
+            <div class="col-md col-6">
+              <img src="assets/images/NoPath.png" alt="item-1" class="img-fluid">
+            </div>
+            <div class="col-md col-6">
+              <img src="assets/images/NoPath - Copy (20).png" alt="item-1" class="img-fluid">
+            </div>
+            <div class="col-md col-6">
+              <img src="assets/images/NoPath - Copy (22).png" alt="item-1" class="img-fluid">
+            </div>
+            <div class="col-md col-6">
+              <img src="assets/images/Group 11341.png" alt="item-1" class="img-fluid">
+            </div>
+            <div class="col-md col-6">
+              <img src="assets/images/NoPath.png" alt="item-1" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-us py-4" id="contact-us">
+        <div class="container">
+          <div class="sec-header mb-3 fw-bold text-end pe-2">تواصل معنا</div>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-mg-0 mb-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d194156.80570930106!2d31.49261556141156!3d30.01553184022273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1696622870075!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-12 col-md-6">
+              <form action="">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label d-block text-end fw-bold">أسمك أو أسم المؤسسة</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=".. اكتب الاسم هنا">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label d-block text-end fw-bold">اختار الخدمة التي تريدها</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="اختر الخدمة">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label d-block text-end fw-bold">رقم الهاتف</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="010222411*** : مثال ">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label d-block text-end fw-bold">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="البريد الإلكتروني">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label d-block text-end fw-bold">اترك رسالة لنا</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="ضع رسالتك هنا"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <footer class="pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-lg-0 mb-5 text-end">
+              <div class="social mb-3">
+                <div class="mb-3">تابعنا عبر</div>
+                <i class="fa-brands fa-facebook-f ms-3"></i>
+                <i class="fa-brands fa-instagram ms-3"></i>
+                <i class="fa-brands fa-youtube ms-3"></i>
+              </div>
+              <div class="mb-3 d-flex rounded-3 subscirbe">
+                <button class="btn border-0 fw-bold d-flex ms-auto main-btn reg-btn">
+                  التسجيل الآن
+                </button>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="بريدك الإلكتروني">
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-lg-0 mb-5 text-end">
+              <div class="contact">
+                <div class="mb-3">تواصل معنا عبر</div>
+                <div class="mb-3">
+                  0123456789
+                  <i class="ms-3 fa-solid fa-phone"></i>
+                </div>
+                <div class="mb-3">
+                  023456789
+                  <i class="ms-3 fa-solid fa-mobile-screen"></i>
+                </div>
+                <div class="mb-3">
+                  example@example.com
+                  <i class="ms-3 fa-solid fa-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-lg-0 mb-5 text-end">
+              <div>الرئيسية</div>
+              <a href="#services" class="d-block text-decoration-none">خدماتنا</a>
+              <a href="who-are-we.html" class="d-block text-decoration-none">قطاعتنا</a>
+              <a href="#our-events" class="d-block text-decoration-none">الندوات</a>
+              <a href="#who-are-we" class="d-block text-decoration-none">من نحن</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-lg-0 mb-3 text-end">
+              <div class="mb-3">
+                <img src="assets/images/footerImg.png" alt="logo" class="img-fluid">
+              </div>
+              عقار رقم 9 شارع رقم9 – مدينة
+              <i class="fa-solid fa-location-dot ms-3"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
