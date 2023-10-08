@@ -76,35 +76,31 @@ for (let i = 0; i < clear.length; ++i ) {
 eventSec.addEventListener("click", function (event) {
     if (event.target.classList.contains("sub-data")) {
         let valid = true;
-    
         for (let i = 0; i < inps.length; ++i) {
             let con = inps[inps.length-1].value.split("").indexOf("@");
 
+            if (inps[i].value === "") {
+                inpsCon[i].classList.add("empty-inp");
+            }
+            if (con === -1 && i === inps.length-1 && inps[i].value !== "") {
+                inpsCon[i].classList.add("missing-char");
+            }
+            if (inps[i].value !== "") {
+                inpsCon[i].classList.remove("empty-inp");
+            }
+            if ((con !== -1) && inps[i].value !== "") {
+                inpsCon[i].classList.remove("missing-char");
+            }
+
             if (inps[i].value === "" || con === -1) {
-
-                if (inps[i].value === "") {
-                    inpsCon[i].classList.add("empty-inp");
-                }
-                if (con === -1 && i === inps.length-1 && inps[i].value !== "") {
-                    inpsCon[i].classList.add("missing-char");
-                }
-                if (inps[i].value.length > 0) {
-                    inpsCon[i].classList.remove("empty-inp");
-                }
-                if ((con !== -1) || inps[i].value == "") {
-                    inpsCon[i].classList.remove("missing-char");
-                }
-
                 valid = false;
             }
         }
 
         if (valid) {
-            for (let i = 0; i < inpsCon.length; ++i) {
-                inpsCon[i].classList.remove("missing-char");
-            }
-            eventReg.classList.add("d-none");
+            
             eventSuccess.classList.remove("d-none");
+            eventReg.classList.add("d-none");
         }
         else {
             event.preventDefault();
