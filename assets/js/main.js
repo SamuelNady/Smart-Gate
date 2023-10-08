@@ -88,17 +88,16 @@ eventSec.addEventListener("click", function (event) {
             if (inps[i].value !== "") {
                 inpsCon[i].classList.remove("empty-inp");
             }
-            if ((con !== -1) && inps[i].value !== "") {
+            if ((con !== -1 && inps[i].value !== "") || inps[i].value === "") {
                 inpsCon[i].classList.remove("missing-char");
             }
-
             if (inps[i].value === "" || con === -1) {
                 valid = false;
             }
         }
 
         if (valid) {
-            
+
             eventSuccess.classList.remove("d-none");
             eventReg.classList.add("d-none");
         }
