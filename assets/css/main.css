@@ -377,6 +377,10 @@ footer a {
 footer .row div:nth-child(4) img {
     width: 80px;
 }
+footer .my-acc a {
+    color: var(--golden);
+    font-style: italic;
+}
 /* about us page*/
 
 header .btns button:nth-child(2), 
