@@ -23,6 +23,56 @@ navLinks.forEach(function (e) {
     });
 });
 
+signIn.addEventListener("click", function (event) {
+    inps = document.querySelectorAll("nav .log-in form > div input");
+    inpsCon = document.querySelectorAll("nav .log-in form > div");
+    console.log(inps, inpsCon)
+    if (event.target.classList.contains("main-btn")) {
+        let valid = true;
+        for (let i = 0; i < inps.length; ++i) {
+            if (inps[i].value === "") {
+                inpsCon[i].classList.add("empty-inp");
+                valid = false;
+            }
+            if (inps[i].value !== "") {
+                inpsCon[i].classList.remove("empty-inp");
+            }
+        }
+
+        if (valid) {
+            signIn.classList.add("d-none");
+        }
+        else {
+            event.preventDefault();
+        }
+    }
+});
+
+register.addEventListener("click", function (event) {
+    inps = document.querySelectorAll("nav .registeration form > div input");
+    inpsCon = document.querySelectorAll("nav .registeration form > div");
+    console.log(inps, inpsCon)
+    if (event.target.classList.contains("main-btn")) {
+        let valid = true;
+        for (let i = 0; i < inps.length; ++i) {
+            if (inps[i].value === "") {
+                inpsCon[i].classList.add("empty-inp");
+                valid = false;
+            }
+            if (inps[i].value !== "") {
+                inpsCon[i].classList.remove("empty-inp");
+            }
+        }
+
+        if (valid) {
+            register.classList.add("d-none");
+        }
+        else {
+            event.preventDefault();
+        }
+    }
+});
+
 registerBtn.addEventListener("click", function () {
     register.classList.remove("d-none");
 });
@@ -97,7 +147,6 @@ eventSec.addEventListener("click", function (event) {
         }
 
         if (valid) {
-
             eventSuccess.classList.remove("d-none");
             eventReg.classList.add("d-none");
         }

@@ -73,9 +73,13 @@
                       من فضلك قم بإدخال البيانات المطلوبة منك لإستكمال تسجيل الدخول ومعرفة الدرجات والتقديرات الخاصة بك في الجامعة
                     </p>
                     <form class="text-end mb-3" action="">
-                      <input class="form-control bg-light mb-3" type="number" placeholder= "الرقم القومي" required>
-                      <input class="form-control bg-light mb-3" type="number" placeholder= "الرقم الجامعي" required>
-                      <input type="submit" class="btn border-0 fw-bold d-flex ms-auto main-btn" value="تسجيل الآن">
+                      <div class="position-relative">
+                        <input class="form-control bg-light mb-3" type="number" placeholder= "الرقم القومي" required>
+                      </div>
+                      <div class="position-relative">
+                        <input class="form-control bg-light mb-3" type="number" placeholder= "الرقم الجامعي" required>
+                      </div>
+                        <input type="submit" class="btn border-0 fw-bold d-flex ms-auto main-btn" value="تسجيل الآن">
                     </form>
                   </div>
                 </div>
@@ -105,7 +109,9 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                      <input class="form-control bg-light mb-3" type="number" placeholder= "رقم الجلوس" required>
+                      <div class="position-relative">
+                        <input class="form-control bg-light mb-3" type="number" placeholder= "رقم الجلوس" required>
+                      </div>
                       <input type="submit" class="btn border-0 fw-bold d-flex ms-auto main-btn" value="المتابعة">
                     </form>
                   </div>
@@ -461,24 +467,28 @@
             <div class="col-12 col-md-6">
               <form action="">
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label d-block text-end fw-bold">أسمك أو أسم المؤسسة</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=".. اكتب الاسم هنا">
+                  <label for="name" class="form-label d-block text-end fw-bold">أسمك أو أسم المؤسسة</label>
+                  <input type="text" class="form-control" id="name" placeholder=".. اكتب الاسم هنا">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label d-block text-end fw-bold">اختار الخدمة التي تريدها</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="اختر الخدمة">
+                  <select class="form-select text-end text-black-50" aria-label="Default select example">
+                    <option selected>اختر الخدمة</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label d-block text-end fw-bold">رقم الهاتف</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="010222411*** : مثال ">
+                  <label for="phone" class="form-label d-block text-end fw-bold">رقم الهاتف</label>
+                  <input type="number" class="form-control" id="phone" placeholder="010222411*** : مثال ">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label d-block text-end fw-bold">البريد الإلكتروني</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="البريد الإلكتروني">
+                  <label for="email-area" class="form-label d-block text-end fw-bold">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="email-area" placeholder="البريد الإلكتروني">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label d-block text-end fw-bold">اترك رسالة لنا</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="ضع رسالتك هنا"></textarea>
+                  <label for="message" class="form-label d-block text-end fw-bold">اترك رسالة لنا</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="ضع رسالتك هنا"></textarea>
                 </div>
               </form>
             </div>
