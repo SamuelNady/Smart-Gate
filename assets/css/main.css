@@ -105,6 +105,30 @@ form input::-webkit-inner-spin-button {
 .thumbnail span:nth-child(1) img {
     display: none;
 }
+.empty-inp::after,
+.missing-char::after {
+    content: "input is empty";
+    color: red;
+    position: absolute;
+    bottom: -20.5px;
+    right: 5px;
+}
+.missing-char::after {
+    content: "@ sing is missing";
+}
+.clear {
+    width: 15px;
+    height: 15px;
+    left: 10px;
+    top: 11px;
+    z-index: 10;
+    cursor: pointer;
+}
+.clear svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 /* navbar */
 nav {
     top: 0;
@@ -269,7 +293,7 @@ nav .container .navbar-toggler:focus {
 .registeration {
     position: fixed;
     left: 0;
-    top: 0;
+    top: -25px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -278,9 +302,9 @@ nav .container .navbar-toggler:focus {
     background-color: var(--overlay-color);
     z-index: 10000;
 }
-.log-in,
-.registeration {
-    top: -25px;
+
+.event-success {
+    top: 0;
 }
 .log-in div:nth-child(2) > img,
 .registeration div:nth-child(2) > img {
@@ -352,4 +376,27 @@ footer a {
 }
 footer .row div:nth-child(4) img {
     width: 80px;
+}
+/* about us page*/
+
+header .btns button:nth-child(2), 
+header .btns button:nth-child(2):active {
+    background-color: var(--secondary-color);
+    border-radius: 5px !important;
+    border: none;
+}
+header .btns a {
+    text-decoration: none;
+    color: white;
+}
+
+/* subjects */
+.subjects {
+    margin-bottom: 150px;
+}
+.subjects table {
+    overflow: hidden;
+}
+.subjects table {
+    font-size: 13px;
 }

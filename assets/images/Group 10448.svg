@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="201" height="53" viewBox="0 0 201 53">
+  <g id="Group_10448" data-name="Group 10448" transform="translate(-140 -840)">
+    <rect id="Head.BG" width="201" height="53" rx="8" transform="translate(140 840)" fill="#3485b9"/>
+    <g id="Group_10447" data-name="Group 10447" transform="translate(10)">
+      <text id="طباعة_النتيجة" data-name="طباعة النتيجة" transform="translate(260 873)" fill="#fff" font-size="16" font-family="Cairo-Regular, Cairo"><tspan x="-90" y="0">طباعة النتيجة</tspan></text>
+      <g id="print_black_24dp" transform="translate(268 855)">
+        <path id="Path_11665" data-name="Path 11665" d="M0,0H24V24H0Z" fill="none"/>
+        <path id="Path_11666" data-name="Path 11666" d="M19,8H5a3,3,0,0,0-3,3v4a2.006,2.006,0,0,0,2,2H6v2a2.006,2.006,0,0,0,2,2h8a2.006,2.006,0,0,0,2-2V17h2a2.006,2.006,0,0,0,2-2V11A3,3,0,0,0,19,8ZM15,19H9a1,1,0,0,1-1-1V14h8v4A1,1,0,0,1,15,19Zm4-7a1,1,0,1,1,1-1A1,1,0,0,1,19,12ZM17,3H7A1,1,0,0,0,6,4V6A1,1,0,0,0,7,7H17a1,1,0,0,0,1-1V4A1,1,0,0,0,17,3Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
